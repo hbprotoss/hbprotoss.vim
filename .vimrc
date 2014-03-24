@@ -128,7 +128,7 @@ set wrap
 
 " Indent
 " set cindent
-autocmd FileType h,c,cpp set shiftwidth=8 | set cindent
+autocmd FileType h,c,cpp set shiftwidth=4 softtabstop=4 tabstop=4 | set cindent | set expandtab
 autocmd FileType python set shiftwidth=4 softtabstop=4 tabstop=4 | set expandtab 
 
 " Default file type
@@ -176,12 +176,11 @@ let OmniCpp_ShowAccess = 1
 let OmniCpp_MayCompleteDot = 1
 let OmniCpp_MayCompleteArrow = 1
 let OmniCpp_MayCompleteScope = 1
-set tags=/home/digimon/.vim/plugin/tags/tags
-set tags+=/home/digimon/.vim/plugin/tags/cpptags
-set tags+=/home/digimon/.vim/plugin/tags/opencv.tags
-set tags+=/home/digimon/Desktop/Projects/Python-2.5.2/tags
-set tags+=tags
-map <silent> <F5> :!ctags --file-scope=yes --langmap=c:+.h --languages=c,c++ --links=yes --c-kinds=+p --c++-kinds=+p --fields=+iaS --extra=+q -R .<CR>
+set tags=~/.vim/plugin/tags/tags
+set tags+=~/.vim/plugin/tags/cpptags
+set tags+=~/Documents/dev/Projects/redis/redis-2.8.7/tags
+set tags+=./tags
+map <silent> <F5> :!ctags -R .<CR>
 
 " cscope
 cs a cscope.out

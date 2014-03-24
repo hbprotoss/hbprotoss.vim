@@ -1,6 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_cnt =5
 let g:netrw_dirhist_1='/run/network'
 let g:netrw_dirhist_2='/lib/udev'
 let g:netrw_dirhist_3='/home/digimon/.dosbox'
 let g:netrw_dirhist_4='/home/digimon/Desktop/Projects/pytest/import/mo'
+let g:netrw_dirhist_5='/Users/hbprotoss/.subversion/auth/svn.simple'
