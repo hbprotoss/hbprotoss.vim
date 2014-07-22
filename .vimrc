@@ -204,7 +204,7 @@ nmap <Up> g<Up>
 nmap <Down> g<Down>
 
 " Paste mode
-let paste_mode = 0
+let paste_mode = 1
 map <silent> <F11> :if paste_mode == 0 <CR>
 	\set paste <CR>
 	\echo "Enter paste mode" <CR>
