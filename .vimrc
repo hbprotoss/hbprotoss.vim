@@ -15,6 +15,7 @@ if v:progname =~? "evim"
 endif
 
 set t_Co=256
+let mapleader=","
 
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
@@ -225,10 +226,13 @@ hi PmenuSel guibg=#4169E1
 
 set gcr=a:blinkon800-blinkoff800
 
-" powerline
+" airline
 set laststatus=2
-let g:Powerline_symbols = 'fancy'
+let g:airline_powerline_fonts = 1
+" let g:Powerline_symbols = 'fancy'
 
+" indentLine
+let g:indentLine_color_term = 245
 
 
 "...............Bundle................."
@@ -243,10 +247,13 @@ Bundle 'gmarik/vundle'
 "my Bundle here:
 "
 " original repos on github
-" Plugin 'bling/vim-airline'
-Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
-Bundle 'airblade/vim-gitgutter'
+Bundle 'bling/vim-airline'
+" Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'davidhalter/jedi-vim'
+Bundle 'tpope/vim-fugitive'
+Bundle 'jmcantrell/vim-virtualenv'
+Bundle 'scrooloose/nerdcommenter'
+Bundle 'Yggdroot/indentLine'
 "..................................
 " vim-scripts repos
 "..................................
