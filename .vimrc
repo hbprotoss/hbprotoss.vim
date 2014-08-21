@@ -14,6 +14,8 @@ if v:progname =~? "evim"
   finish
 endif
 
+set t_Co=256
+
 " Use Vim settings, rather than Vi settings (much better!).
 " This must be first, because it changes other options as a side effect.
 set nocompatible
@@ -222,3 +224,32 @@ hi Pmenu guibg=#B0B0B0
 hi PmenuSel guibg=#4169E1
 
 set gcr=a:blinkon800-blinkoff800
+
+" powerline
+set laststatus=2
+let g:Powerline_symbols = 'fancy'
+
+
+
+"...............Bundle................."
+set nocompatible                " be iMproved
+filetype off                    " required!
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+Bundle 'gmarik/vundle'
+
+"my Bundle here:
+"
+" original repos on github
+" Plugin 'bling/vim-airline'
+Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
+Bundle 'airblade/vim-gitgutter'
+"..................................
+" vim-scripts repos
+"..................................
+" non github repos
+" Bundle 'git://git.wincent.com/command-t.git'
+"......................................
+filetype plugin indent on
