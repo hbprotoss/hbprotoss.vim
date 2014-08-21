@@ -246,6 +246,7 @@ Bundle 'gmarik/vundle'
 " Plugin 'bling/vim-airline'
 Bundle 'Lokaltog/powerline', {'rtp': 'powerline/bindings/vim/'}
 Bundle 'airblade/vim-gitgutter'
+Bundle 'davidhalter/jedi-vim'
 "..................................
 " vim-scripts repos
 "..................................
