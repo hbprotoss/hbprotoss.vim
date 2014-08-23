@@ -1,8 +1,9 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_cnt =7
 let g:netrw_dirhist_1='/run/network'
 let g:netrw_dirhist_2='/lib/udev'
 let g:netrw_dirhist_3='/home/digimon/.dosbox'
 let g:netrw_dirhist_4='/home/digimon/Desktop/Projects/pytest/import/mo'
 let g:netrw_dirhist_5='/Users/hbprotoss/.subversion/auth/svn.simple'
 let g:netrw_dirhist_6='/Users/hbprotoss/Software/musicbox/.git'
+let g:netrw_dirhist_7='/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/site-packages/NetEase_MusicBox-0.1.0.1.10-py2.7.egg'
