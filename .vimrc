@@ -156,6 +156,12 @@ nnoremap <silent> <F4> :TlistOpen<CR>
 let g:netrw_winsize = 30
 nmap <silent> <leader>fe :e!<CR>
 
+" tab
+nmap H :tabprevious<CR>
+nmap L :tabnext<CR>
+nmap N :tabnew<CR>
+nmap W :tabclose<CR>
+
 " OmniCppComplete
 set completeopt=longest,menu
 set wildmenu
