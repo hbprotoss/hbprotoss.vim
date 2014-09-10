@@ -145,9 +145,9 @@ source $VIMRUNTIME/menu.vim
 
 " Tag list (ctags)
 let Tlist_Ctags_Cmd = 'ctags'
+let Tlist_Auto_Open = 1
 let Tlist_Exit_OnlyWindow = 1
 let Tlist_Use_SingleClick = 1
-let Tlist_GainFocus_On_ToggleOpen = 1
 let Tlist_Sort_Type = "name"
 set updatetime=100
 nnoremap <silent> <F4> :TlistOpen<CR>
@@ -159,7 +159,7 @@ nmap <silent> <leader>fe :e!<CR>
 " tab
 nmap H :tabprevious<CR>
 nmap L :tabnext<CR>
-nmap N :tabnew<CR>
+nmap T :tabnew<CR>
 nmap W :tabclose<CR>
 
 " OmniCppComplete
@@ -187,7 +187,7 @@ let OmniCpp_MayCompleteArrow = 1
 let OmniCpp_MayCompleteScope = 1
 set tags=~/.vim/plugin/tags/tags
 set tags+=~/.vim/plugin/tags/cpptags
-set tags+=~/Documents/dev/Projects/redis/redis-2.8.7/tags
+set tags+=~/Documents/dev/Projects/redis/redis-2.8.13/tags
 set tags+=./tags
 map <silent> <F5> :!ctags -R .<CR>
 
@@ -224,7 +224,7 @@ map <silent> <F11> :if paste_mode == 0 <CR>
 \endif <CR>
 
 " Highlight search
-map <silent> <F3> : set nohls <CR>
+map <silent> <F3> : nohls <CR>
 
 " Pmenu
 hi Pmenu guibg=#B0B0B0
