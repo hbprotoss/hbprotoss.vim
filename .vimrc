@@ -225,6 +225,7 @@ map <silent> <F11> :if paste_mode == 0 <CR>
 
 " Highlight search
 map <silent> <F3> : nohls <CR>
+set smartcase
 
 " Pmenu
 hi Pmenu guibg=#B0B0B0
@@ -239,6 +240,10 @@ let g:airline_powerline_fonts = 1
 
 " indentLine
 let g:indentLine_color_term = 245
+
+" YouCompleteMe
+let g:ycm_global_ycm_extra_conf = '~/.vim/.ycm_extra_conf.py'
+let g:ycm_confirm_extra_conf = 0
 
 
 "...............Bundle................."
@@ -260,6 +265,7 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Yggdroot/indentLine'
+" Bundle 'Valloric/YouCompleteMe'
 "..................................
 " vim-scripts repos
 "..................................
