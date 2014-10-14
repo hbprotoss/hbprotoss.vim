@@ -1,1 +1,2 @@
 markdown-1.2.2.vba: call delete('/home/digimon/.vim/ftdetect/markdown.vim')|call delete('/home/digimon/.vim/snippets/markdown.snippets')|call delete('/home/digimon/.vim/syntax/markdown.vim')
+ConflictMotions-2.10.vmb: call delete('/Users/hbprotoss/.vim/autoload/ConflictMotions.vim')|call delete('/Users/hbprotoss/.vim/plugin/ConflictMotions.vim')|call delete('/Users/hbprotoss/.vim/doc/ConflictMotions.txt')

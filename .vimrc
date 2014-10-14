@@ -265,6 +265,11 @@ Bundle 'tpope/vim-fugitive'
 Bundle 'jmcantrell/vim-virtualenv'
 Bundle 'scrooloose/nerdcommenter'
 Bundle 'Yggdroot/indentLine'
+Bundle 'ConflictMotions'
+Bundle 'CountJump'
+Bundle 'ingo-library'
+Bundle 'tpope/vim-repeat'
+Bundle 'visualrepeat'
 " Bundle 'Valloric/YouCompleteMe'
 "..................................
 " vim-scripts repos
